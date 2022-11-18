@@ -1,0 +1,78 @@
+.about-hero {
+  padding: 62px 0;
+  background-image: url("../images/about-hero-bgi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.about-hero__title {
+  margin: 0;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #ffffff;
+}
+
+@include max-width(1290px) {
+  .about-hero {
+    padding: 45px 0;
+  }
+
+  .about-hero__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@include max-width(965px) {
+  .about-hero {
+    padding: 35px 0;
+  }
+
+  .about-hero__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@include max-width(786px) {
+  .about-hero {
+    padding: 45px 0;
+    background-image: url("../images/about-hero-bgi-tablet.jpg");
+  }
+
+  .about-hero__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@include max-width(576px) {
+  .about-hero {
+    padding: 50px 0;
+    background-image: url("../images/about-hero-bgi-mobile.jpg");
+  }
+
+  .about-hero__title {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+  }
+}
+
+@include max-width(330px) {
+  .about-hero {
+    padding: 45px 0;
+  }
+
+  .about-hero__title {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+  }
+}
