@@ -1,80 +1,85 @@
 .signup {
-    padding: 100px 0;
-    background-color: #495567;
-
-    background-image: url('../../images/footer-circle.png');
-    background-repeat: no-repeat;
-    background-position: calc(50% + 200px) calc(50% + 110px);
+  padding: 100px 0;
+  background-color: #495567;
+  background-image: url("../../images/footer-circle.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 270px) calc(50% + 110px);
 }
 
 .signup__inner {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .signup__titlebox {
-    max-width: 415px;
-    width: 100%;
+  max-width: 415px;
+  width: 100%;
 }
 .signup__title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -2.14286px;
-    color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #ffffff;
 }
 
 .signup__links {
-    margin-left: auto;
-    display: flex;
+  margin-left: auto;
+  display: flex;
 }
 
 .signup__link {
-    margin-left: 5px;
+  margin-left: 5px;
+}
+
+@include max-width(1550px) {
+  .signup {
+    background-position: right bottom ;
+}
 }
 
 @include max-width(768px) {
-    .signup {
-        padding: 62px 0;
-        background-image: url('../../images/signup-bgi-tablet.png');
-        background-position: bottom center;
-    }
-    .signup__inner {
-        flex-direction: column;
-    }
+  .signup {
+    padding: 62px 0;
+    background-image: url("../../images/signup-bgi-tablet.png");
+    background-position: bottom center;
+  }
+  .signup__inner {
+    flex-direction: column;
+  }
 
-    .signup__titlebox {
-        max-width: 457px;
-        text-align: center;
-    }
+  .signup__titlebox {
+    max-width: 457px;
+    text-align: center;
+  }
 
-    .signup__links {
-        margin-right: auto;
-    }
+  .signup__links {
+    margin-right: auto;
+  }
 }
 
 @include max-width(576px) {
-    .signup {
-        padding: 88px 0;
-        background-size: 100%;
-        background-image: url('../../images/signup-bgi-mobile.png');
-    }
+  .signup {
+    padding: 88px 0;
+    background-size: 100%;
+    background-image: url("../../images/signup-bgi-mobile.png");
+  }
 
-    .signup__title {
-        font-size: 32px;
-        line-height: 32px;
-        text-align: center;
-        letter-spacing: -1.42857px;
-    }
+  .signup__title {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1.42857px;
+  }
 
-    .signup__link {
-        margin-left: 10px;
-    }
+  .signup__link {
+    margin-left: 10px;
+  }
 
-    .signup__link:first-child img{
-        width: 113px;
-    }
-    .signup__link:last-child img{
-        width: 130px;
-    }
+  .signup__link:first-child img {
+    width: 113px;
+  }
+  .signup__link:last-child img {
+    width: 130px;
+  }
 }
