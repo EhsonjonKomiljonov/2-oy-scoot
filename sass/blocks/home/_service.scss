@@ -1,0 +1,128 @@
+.service {
+    padding: 296px 0 147px;
+}
+
+.service__list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.service__list::before {
+    display: inline-block;
+    position: absolute;
+    top: -90px;
+    right: 300px;
+    max-width: 974px;
+    width: 100%;
+    border: 10px solid #E5ECF4;
+    content: '';
+}
+
+.service__item {
+    position: relative;
+    max-width: 350px;
+}
+.service__item + .service__item {
+    margin-left: 30px;
+}
+
+.service__subtitle {
+    margin: 0 0 27px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+}
+
+.service__text {
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
+
+.service__item::before {
+    display: inline-block;
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    top: -130px;
+    background-image: url('../../../images/service-1.png');
+    content: '';
+}
+
+.service__item:nth-child(2)::before {
+    background-image: url('../../../images/service-2.png');
+}
+
+.service__item:nth-child(3)::before {
+    background-image: url('../../../images/service-3.png');
+}
+
+
+@include max-width(768px) {
+    .service {
+        padding: 122px 0 140px;
+    }
+
+    .service__list {
+        flex-direction: column;
+    }
+
+    .service__list::before {
+        display: none;
+    }
+    
+    .service__item {
+        padding-left: 150px;
+        max-width: 570px;
+    }
+    .service__item + .service__item {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    
+    .service__item::before {
+        top: 0;
+        left: 0;
+    }
+}
+
+@include max-width(576px) {
+    .service {
+        padding: 200px 0 0;
+    }
+
+    .service__list {
+        align-items: center;
+    }
+    .service__item {
+        text-align: center;
+        padding-left: 0;
+        max-width: 311px;
+    }
+
+    .service__item + .service__item {
+        margin-top: 128px;
+    }
+
+    .service__item::before {
+        width: 56px;
+        height: 56px;
+        background-size: 100%;
+        left: 125px;
+        top: -70px;
+    }
+}
+
+@include max-width(350px) {
+    .container {
+        padding: 0;
+    }
+}

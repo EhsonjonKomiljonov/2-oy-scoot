@@ -1,10 +1,9 @@
 @import "header";
 /*-----  MAIN -----*/
-@import "./home/header";
-@import "./home/signup";
-@import "./home/footer";
-
+@import "./home/home";
 
 @import "./about/about";
 /*-----  MAIN -----*/
+
+@import "signup";
 @import "footer";
