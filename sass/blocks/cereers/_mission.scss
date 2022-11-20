@@ -1,0 +1,142 @@
+.mission {
+  background-image: url("../images/mission-bgi.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 600px) center;
+}
+
+.mission__content {
+  width: 100%;
+  max-width: 445px;
+  padding: 186px 0;
+}
+
+.mission__title {
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.mission__text {
+  margin: 0 0 40px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
+.mission-btn {
+  @include btn;
+}
+
+@include max-width(1550px) {
+  .mission {
+    background-position: right -350px center;
+  }
+}
+
+@include max-width(1075px) {
+  .mission {
+    background-position: right -500px center;
+  }
+}
+
+@include max-width(915px) {
+  .mission__content {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@include max-width(875px) {
+  .mission {
+    background-position: right -350px top 70px;
+  }
+
+  .mission__content {
+    width: 100%;
+    max-width: 573px;
+    margin: 0 auto;
+    padding: 553px 0 120px;
+  }
+
+  .mission__title,
+  .mission__text {
+    text-align: center;
+  }
+
+  .mission__title {
+    margin: 0 0 40px;
+  }
+
+  .mission-btn {
+    display: block;
+    @include btn;
+    margin: 0 auto;
+  }
+}
+
+@include max-width(745px) {
+  .mission {
+    background-position: right -450px top 50px;
+  }
+
+  .mission__content {
+    padding: 550px 0 120px;
+  }
+}
+
+@include max-width(660px) {
+  .mission {
+    background-position: right -500px top 50px;
+  }
+
+  .mission__content {
+    padding: 550px 0 120px;
+  }
+}
+
+@include max-width(576px) {
+  .mission {
+    background-size: 735px 311px;
+    background-position: right -250px top 72px;
+  }
+
+  .mission__content {
+    width: 100%;
+    max-width: 311px;
+    padding: 439px 0 120px;
+  }
+
+  .mission__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@include max-width(495px){
+  .mission{
+    background-image: url('../images/mission-bgi-mobile.png');
+    background-position: right -350px top 72px;
+  }
+}
+
+@include max-width (440px){
+  .mission{
+    background-position: right -400px top 50px;
+  }
+
+  .mission__content{
+    padding: 400px 0 120px;
+  }
+}
+
+@include max-width (350px){
+  .mission{
+    background-position: right -425px top 50px;
+  }
+}
