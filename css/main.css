@@ -1346,6 +1346,7 @@ body::-webkit-scrollbar-thumb {
 
 .questions__drop-down__title {
   margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1416,6 +1417,13 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: -0.803571px;
   }
 }
+.careers-hero {
+  padding: 100px 0;
+  background-image: url("../images/careers-hero-bgi.jpg");
+  background-position: center;
+  background-size: 100% auto;
+}
+
 .map__inner {
   padding: 100px 0 100px;
 }
