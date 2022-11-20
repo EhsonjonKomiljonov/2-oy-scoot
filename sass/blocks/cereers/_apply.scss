@@ -1,0 +1,73 @@
+.apply {
+  padding-bottom: 160px;
+}
+
+.apply__list {
+  width: 100%;
+}
+
+.apply__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 64px 35px 46px;
+  background-color: #f2f5f9;
+}
+
+.apply__item + .apply__item {
+  margin-top: 24px;
+}
+
+.apply__subtitle {
+  margin: 0 0 8px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.apply__text {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+
+.apply__buttons {
+  @include btn;
+}
+
+@include max-width(576px) {
+
+  .apply{
+    padding-bottom: 120px;
+  }
+
+  .apply__item {
+    flex-direction: column;
+    padding: 35px 50px;
+  }
+
+  .apply__subtitle,
+  .apply__text {
+    text-align: center;
+  }
+
+  .apply__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.803571px;
+  }
+
+  .apply__content {
+    margin-bottom: 16px;
+  }
+}
+
+@include max-width (390px){
+  .apply__item{
+    padding: 35px 20px;
+  }
+}

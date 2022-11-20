@@ -71,16 +71,16 @@
 
 @include max-width(768px) {
     .nav {
-        margin-left: 40px;
+        margin-left: 20px;
         padding-right: 10px;
     }
 
     .nav__item + .nav__item {
-        margin-left: 28px;
+        margin-left: 20px;
     }
 }
 
-@include max-width(576px) {
+@include max-width(590px) {
     .logo {
         display: block;
         margin: 0 auto;
