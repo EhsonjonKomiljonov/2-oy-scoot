@@ -929,6 +929,57 @@ a {
     letter-spacing: -1.78571px;
   }
 }
+.digital {
+  padding: 120px 0;
+}
+
+.digital__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 202px 0;
+}
+
+.digital__item + .digital__item {
+  flex-direction: row-reverse;
+}
+
+.digital__img {
+  position: absolute;
+  right: calc(50% - 1079px);
+}
+
+.digital__img__two {
+  position: absolute;
+  left: calc(50% - 1159px);
+}
+
+.digital__content {
+  width: 100%;
+  max-width: 445px;
+}
+
+.digital__subtitle {
+  margin: 0 0 24px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.digital__text {
+  margin: 0;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
 /*-----  MAIN -----*/
 .signup {
   padding: 100px 0;
