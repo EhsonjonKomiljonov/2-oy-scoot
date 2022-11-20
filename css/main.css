@@ -514,7 +514,7 @@ p {
 /*-----  MAIN -----*/
 .hero {
   padding: 153px 0;
-  background-image: url("../../../images/hero-bgi.png");
+  background-image: url("../images/hero-bgi.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -566,7 +566,7 @@ p {
 
 @media only screen and (max-width: 768px) {
   .hero {
-    background-image: url("../../../images/hero-tablet-bgi.png");
+    background-image: url("../images/hero-tablet-bgi.png");
     background-position: center;
     padding: 137px 0 217px;
   }
@@ -587,7 +587,7 @@ p {
 @media only screen and (max-width: 576px) {
   .hero {
     padding: 115px 0 180px;
-    background-image: url("../../../images/hero-mobile-bgi.png");
+    background-image: url("../images/hero-mobile-bgi.png");
     background-size: fill;
   }
   .hero__title {
@@ -658,16 +658,16 @@ p {
   width: 96px;
   height: 96px;
   top: -130px;
-  background-image: url("../../../images/service-1.png");
+  background-image: url("../images/service-1.png");
   content: "";
 }
 
 .service__item:nth-child(2)::before {
-  background-image: url("../../../images/service-2.png");
+  background-image: url("../images/service-2.png");
 }
 
 .service__item:nth-child(3)::before {
-  background-image: url("../../../images/service-3.png");
+  background-image: url("../images/service-3.png");
 }
 
 @media only screen and (max-width: 768px) {
@@ -722,7 +722,7 @@ p {
   }
 }
 .types {
-  padding-bottom: 178px;
+  padding-bottom: 180px;
 }
 
 .types__inner {
@@ -734,20 +734,20 @@ p {
   padding: 70px 0;
   margin-bottom: 180px;
   display: flex;
-  background-image: url("../../../images/riding-bgi.png");
+  background-image: url("../images/riding-bg.png");
   background-repeat: no-repeat;
-  background-position: calc(50% + 320px) calc(50% + 3px);
+  background-position: calc(50% + 500px) calc(50% + 3px);
 }
 .types__item:nth-child(2) {
-  background-image: url("../../../images/city-bgi.png");
-  background-position: calc(50% - 370px) calc(50% + 3px);
+  background-image: url("../images/city-bg.png");
+  background-position: calc(50% - 600px) calc(50% + 3px);
 }
 .types__item:nth-child(2) .types__content {
   margin-left: auto;
 }
 .types__item:last-child {
-  background-image: url("../../../images/paymet-bgi.png");
-  background-position: calc(50% + 370px) calc(50% + 3px);
+  background-image: url("../images/paymet-bg.png");
+  background-position: calc(50% + 550px) calc(50% + 3px);
 }
 
 .types__content {
@@ -797,12 +797,11 @@ p {
 
 @media only screen and (max-width: 768px) {
   .types__item {
-    margin-bottom: 20px;
+    margin-bottom: 150px;
     padding-top: 450px;
     padding-bottom: 10px;
-    background-position: calc(50% + 10px) calc(50% - 150px);
+    background-position: calc(50% + 190px) calc(50% - 150px);
     text-align: center;
-    background-size: 95%;
   }
   .types__item .types__content {
     margin-right: auto;
@@ -812,12 +811,11 @@ p {
     max-width: 573px;
   }
   .types__item:nth-child(2) {
-    margin-bottom: 20px;
+    margin-bottom: 150px;
     padding-top: 450px;
     padding-bottom: 10px;
-    background-position: calc(50% - 70px) calc(50% - 150px);
+    background-position: calc(50% - 270px) calc(50% - 150px);
     text-align: center;
-    background-size: 80%;
   }
   .types__item:nth-child(2) .types__content {
     max-width: 573px;
@@ -828,9 +826,8 @@ p {
     margin-bottom: 20px;
     padding-top: 470px;
     padding-bottom: 10px;
-    background-position: calc(50% + 70px) calc(50% - 120px);
+    background-position: calc(50% + 270px) calc(50% - 120px);
     text-align: center;
-    background-size: 80%;
   }
   .types__item:last-child .types__content {
     max-width: 573px;
@@ -848,22 +845,23 @@ p {
     line-height: 25px;
   }
   .types__item:first-child {
+    background-image: url("../images/riding-mobile-bg.png");
     margin-bottom: 0px;
-    padding-top: 300px;
+    padding-top: 340px;
     background-position: calc(50% + 10px) calc(50% - 150px);
-    background-size: 85%;
   }
   .types__item:nth-child(2) {
+    background-image: url("../images/city-mobile-bg.png");
     margin-bottom: 0;
-    padding-top: 300px;
-    background-position: calc(50% - 50px) calc(50% - 150px);
-    background-size: 80%;
+    padding-top: 350px;
+    background-position: calc(50% - 15px) calc(50% - 150px);
   }
   .types__item:last-child {
-    margin-bottom: 0;
-    padding-top: 300px;
+    margin-bottom: 5px;
+    padding-top: 350px;
     padding-bottom: 10px;
-    background-position: calc(50% + 50px) calc(50% - 120px);
+    background-image: url("../images/paymet-mobile-bg.png");
+    background-position: calc(50% + 20px) calc(50% - 150px);
   }
 }
 .about-hero {
