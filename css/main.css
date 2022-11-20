@@ -1250,6 +1250,68 @@ p {
     letter-spacing: -1.42857px;
   }
 }
+.map__inner {
+  padding: 100px 0 100px;
+}
+.map__inner img {
+  max-width: 1110px;
+  max-height: 535px;
+  width: 100%;
+  height: 100%;
+}
+
+.map__content {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .map__inner {
+    padding: 80px 0 80px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .map__inner {
+    padding: 50px 0 72px;
+  }
+  .map__content {
+    display: block;
+    padding-top: 40px;
+  }
+  .map__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map__item {
+    padding: 22px;
+    max-width: 300px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 28px;
+    background: rgba(252, 183, 43, 0.1490196078);
+    text-align: center;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    text-align: center;
+  }
+  .map__item + .map__item {
+    margin-top: 16px;
+  }
+}
+.mess__inner {
+  padding: 0 0 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mess__title {
+  margin: 0;
+  max-width: 351px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
 .questions {
   padding-bottom: 160px;
 }
@@ -1264,6 +1326,9 @@ p {
   color: #495567;
 }
 
+.mess__text {
+  margin: 0;
+  max-width: 445px;
 .questions__inner {
   margin-top: 64px;
 }
@@ -1344,6 +1409,55 @@ p {
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
+  color: #939CAA;
+}
+
+.mess__link {
+  padding: 14px;
+  max-width: 180px;
+  width: 100%;
+  border: 3px solid #FCB72B;
+  background-color: #FCB72B;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+.mess__link:hover {
+  color: #FCB72B;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+  .mess__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mess__title {
+    max-width: 457px;
+    margin: 0 0 40px;
+  }
+  .mess__text {
+    max-width: 573px;
+    margin: 0 0 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .mess__inner {
+    padding: 0 0 70px;
+  }
+  .mess__title {
+    max-width: 310px;
+    margin: 0 0 32px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .mess__text {
+    margin: 0 0 32px;
+  }
+}
+=======
   color: #495567;
 }
 
