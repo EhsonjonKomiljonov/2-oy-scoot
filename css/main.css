@@ -1465,6 +1465,12 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
   }
 }
+@media only screen and (max-width: 360px) {
+  .careers-hero__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
 .map__inner {
   padding: 100px 0 100px;
 }
