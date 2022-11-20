@@ -1,0 +1,62 @@
+.careers-hero {
+  padding: 100px 0;
+  background-image: url("../images/careers-hero-bgi.jpg");
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.careers-hero__title {
+  margin: 0;
+  display: none;
+}
+
+@include max-width(830px) {
+
+  .careers-hero{
+    padding: 72px 0;
+    background-image: url('../images/careers-hero-bgi-tablet.jpg');
+    background-repeat: no-repeat;
+  }
+
+  .careers-hero__title {
+    display: block;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+  }
+}
+
+@include max-width (660px){
+
+  .careers-hero{
+    padding: 55px;
+  }
+
+  .careers-hero__title {
+    display: block;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -2.5px;
+    color: #ffffff;
+  }
+}
+
+@include max-width (576px){
+  .careers-hero{
+    background-image: url('../images/careers-hero-bgi-mobile.jpg');
+    background-repeat: no-repeat;
+  }
+
+  .careers-hero__title{
+    text-align: center;
+  }
+}
+
+@include max-width(360px){
+  .careers-hero__title{
+    font-size: ;
+  }
+}
