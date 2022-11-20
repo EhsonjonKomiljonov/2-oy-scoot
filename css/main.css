@@ -499,6 +499,10 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 
+.site-header__menu {
+  display: none;
+}
+
 #menu:checked body {
   overflow: hidden;
 }
@@ -594,6 +598,9 @@ body::-webkit-scrollbar-thumb {
   }
   #menu:checked ~ .menu-label {
     display: none;
+  }
+  .site-header__menu {
+    display: block;
   }
   .nav,
 .site-header__link {

@@ -69,6 +69,10 @@
   background-color: transparent;
 }
 
+.site-header__menu {
+  display: none;
+}
+
 // MENU
 
 #menu:checked body {
@@ -176,6 +180,10 @@
 
   #menu:checked ~ .menu-label {
     display: none;
+  }
+
+  .site-header__menu {
+    display: block;
   }
 
   .nav,
