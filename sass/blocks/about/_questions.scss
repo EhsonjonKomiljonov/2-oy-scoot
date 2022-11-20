@@ -22,8 +22,13 @@
   justify-content: space-between;
 }
 
-.question__main__drop-downs + .question__main__drop-downs{
+.question__main__drop-downs + .question__main__drop-downs {
   margin-top: 64px;
+}
+
+.questions__subtitle__box {
+  width: 100%;
+  max-width: 290px;
 }
 
 .questions__subtitle {
@@ -46,14 +51,14 @@
   background-color: #f2f5f9;
   @include transition;
 
-  &:hover{
-    background-color: #FFF4DF;
+  &:hover {
+    background-color: #fff4df;
   }
 }
 
 .questions__drop-down::before {
   position: absolute;
-  top: 34px;
+  top: 40px;
   right: 40px;
   width: 30px;
   height: 15px;
@@ -67,9 +72,13 @@
   margin-top: 16px;
 }
 
-.questions__drop-down__title {
+.questions__drop-down__title__box {
   padding: 32px 0 0;
   list-style-type: none;
+}
+
+.questions__drop-down__title {
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -85,4 +94,69 @@
   font-size: 15px;
   line-height: 25px;
   color: #495567;
+}
+
+@include max-width(900px) {
+  .question__main__drop-downs {
+    flex-direction: column;
+  }
+
+  .questions__subtitle__box {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .questions__subtitle {
+    text-align: center;
+  }
+
+  .questions__drop-downs__box {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 32px;
+  }
+}
+
+@include max-width(610px) {
+  .questions__title {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.42857px;
+  }
+
+  .questions__inner{
+    margin-top: 48px;
+  }
+
+  .questions__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+  }
+
+  .questions__drop-down {
+    padding: 0 35px 32px 20px;
+  }
+
+  .questions__drop-down::before {
+    right: 20px;
+  }
+
+  .questions__drop-down__title__box {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+@include max-width(370px) {
+  .questions__drop-down::before {
+    right: 10px;
+  }
+
+  .questions__drop-down__title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.803571px;
+  }
 }
