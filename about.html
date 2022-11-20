@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="site-header">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <button class="site-header__btn">
+          <img
+          class="site-header__menu"
+          src="./images/menu.svg"
+          alt="menu switch button"
+          />
+        </button>
+        <a class="logo" href="./index.html">
+          <img
+          class="logo__img"
+          src="./images/logo.svg"
+          width="108"
+          height="28"
+          />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./about.html">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./location.html">Location</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./about.html">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__link" href="">Get Scootin</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about-hero">
       <div class="container">
-        <div class="site-header__inner">
-          <button class="site-header__btn">
-            <img
-              class="site-header__menu"
-              src="./images/menu.svg"
-              alt="menu switch button"
-            />
-          </button>
-          <a class="logo" href="./index.html">
-            <img
-              class="logo__img"
-              src="./images/logo.svg"
-              width="108"
-              height="28"
-            />
-          </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="./about.html">About</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./location.html">Location</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./about.html">Careers</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="site-header__link" href="">Get Scootin</a>
+        <div class="about-hero__inner">
+          <h2 class="about-hero__title">About</h2>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="about-hero">
-        <div class="container">
-          <div class="about-hero__inner">
-            <h2 class="about-hero__title">About</h2>
-          </div>
-        </div>
-      </section>
-      <section class="digital">
-        <div class="container">
-          <div class="digital__inner">
-            <h2 class="visually-hidden">Mobility for the digital era</h2>
-            <ul class="digital__list">
-              <li class="digital__item">
-                <img class="digital__img" src="./images/digital-bgi1.png" alt="Mobility for the digital era">
-                <div class="digital__content">
-                  <h3 class="digital__subtitle">Mobility for the digital era</h2>
-                  <p class="digital__text">
-                    Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.
-                  </p>
-                </div>
-              </li>
-              <li class="digital__item">
-                <img class="digital__img__two" src="./images/digital-bgi2.png" alt="Better urban living">
-                <div class="digital__content">
-                  <h3 class="digital__subtitle">Better urban living</h2>
+    </section>
+    <section class="digital">
+      <div class="container">
+        <div class="digital__inner">
+          <h2 class="visually-hidden">Mobility for the digital era</h2>
+          <ul class="digital__list">
+            <li class="digital__item">
+              <img class="digital__img" src="./images/digital-bgi1.png" alt="Mobility for the digital era">
+              <div class="digital__content">
+                <h3 class="digital__subtitle">
+                  Mobility for the digital era
+                </h2>
+                <p class="digital__text">
+                  Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.
+                </p>
+              </div>
+            </li>
+            <li class="digital__item">
+              <img class="digital__img__two" src="./images/digital-bgi2.png" alt="Better urban living">
+              <div class="digital__content">
+                <h3 class="digital__subtitle">Better urban living</h2>
                   <p class="digital__text">
                     We're helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.
                   </p>
                 </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="values">
+        <div class="container">
+          <div class="values__inner">
+            <h2 class="values__title">
+              Our values
+            </h2>
+            <ul class="values__list">
+              <li class="values__item">
+                <h3 class="values__subtitle">Our tech</h3>
+                <p class="values__text">
+                  Were using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!
+                </p>
+              </li>
+              <li class="values__item">
+                <h3 class="values__subtitle">Our integrity</h3>
+                <p class="values__text">
+                  We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.
+                </p>
+              </li>
+              <li class="values__item">
+                <h3 class="values__subtitle">
+                  Our community
+                </h3>
+                <p class="values__text">
+                  We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.А
+                </p>
               </li>
             </ul>
           </div>
@@ -90,8 +123,8 @@
               </a>
               <a class="signup__link" href="#">
                 <img
-                  src="./images/google-store.png"
-                  alt="download by google play store"
+                src="./images/google-store.png"
+                alt="download by google play store"
                 />
               </a>
             </div>
@@ -104,11 +137,11 @@
         <div class="site-footer__inner">
           <a class="logo" href="./index.html">
             <img
-              class="logo__img"
-              src="./images/white-logo.svg"
-              alt="site logo"
-              width="108"
-              height="28"
+            class="logo__img"
+            src="./images/white-logo.svg"
+            alt="site logo"
+            width="108"
+            height="28"
             />
           </a>
           <div class="nav f-nav">
@@ -128,25 +161,25 @@
             <a class="site-footer__link" href="https://www.facebook.com">
               <img src="./images/facebook.svg" alt="facebook" />
               <img
-                class="icon-hover"
-                src="./images/facebook-hover.svg"
-                alt="facebook"
+              class="icon-hover"
+              src="./images/facebook-hover.svg"
+              alt="facebook"
               />
             </a>
             <a class="site-footer__link" href="https://www.twitter.com">
               <img src="./images/twitter.svg" alt="instagram" />
               <img
-                class="icon-hover"
-                src="./images/twitter-hover.svg"
-                alt="instagram"
+              class="icon-hover"
+              src="./images/twitter-hover.svg"
+              alt="instagram"
               />
             </a>
             <a class="site-footer__link" href="https://www.instagram.com">
               <img src="./images/instagram.svg" alt="instagram" />
               <img
-                class="icon-hover"
-                src="./images/instagram-hover.svg"
-                alt="instagram"
+              class="icon-hover"
+              src="./images/instagram-hover.svg"
+              alt="instagram"
               />
             </a>
           </div>
@@ -154,4 +187,5 @@
       </div>
     </footer>
   </body>
-</html>
+  </html>
+  
