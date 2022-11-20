@@ -1,105 +1,177 @@
 .site-header {
-    padding: 22px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 22px 0;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .site-header__inner {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav {
-    margin-left: 58px;
+  margin-left: 58px;
 }
 
 .nav__list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
 }
 
-.nav__item+.nav__item {
-    margin-left: 33px;
+.nav__item + .nav__item {
+  margin-left: 33px;
 }
 
 .nav__link {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 25px;
-    color: #939CAA;
-    @include transition;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+  @include transition;
 
-    &:hover {
-        color: #FCB72B;
-    }
+  &:hover {
+    color: #fcb72b;
+  }
 }
 
 .site-header__btn {
-    display: inline;
-    position: absolute;
-    border: none;
-    background-color: transparent;
+  display: inline;
+  position: absolute;
+  border: none;
+  background-color: transparent;
 }
 
-.site-header__link{
-    width: 180px;
-    display: inline-block;
-    margin-left: auto;
-    padding: 13px 12px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    background-color: #FCB72B;
-    color: #ffffff;
-    @include transition;
-    border: 3px solid transparent;
+.site-header__link {
+  width: 180px;
+  display: inline-block;
+  margin-left: auto;
+  padding: 13px 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fcb72b;
+  color: #ffffff;
+  @include transition;
+  border: 3px solid transparent;
 
-    &:hover {
-        border: 3px solid #FCB72B;
-        background-color: #ffffff;
-        color: #FCB72B;
-    }
+  &:hover {
+    border: 3px solid #fcb72b;
+    background-color: #ffffff;
+    color: #fcb72b;
+  }
 }
 
-.site-header__menu {
-    display: none;
-    background-color: transparent;
+.menu-label {
+  display: none;
+  background-color: transparent;
 }
+
+// MENU
+
+#menu:checked body {
+  overflow: hidden;
+}
+
+.menu {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  max-width: 256px;
+  width: 100%;
+  background-color: #333a44;
+  height: 100vh;
+  padding: 32px 64px;
+  transition: 0.5s;
+  transform: translateX(-110%);
+}
+
+#menu:checked ~ .menu {
+  transform: translateX(0);
+  z-index: 9;
+}
+
+#menu:checked ~ #bgm {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  z-index: 5;
+}
+
+.menu-exit {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+#menu:checked ~ .menu-exit {
+  display: block;
+}
+
+.menu__links__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__links {
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #e5ecf4;
+}
+
+// MENU
 
 @include max-width(768px) {
-    .nav {
-        margin-left: 20px;
-        padding-right: 10px;
-    }
+  .nav {
+    margin-left: 20px;
+    padding-right: 10px;
+  }
 
-    .nav__item + .nav__item {
-        margin-left: 20px;
-    }
+  .nav__item + .nav__item {
+    margin-left: 20px;
+  }
 }
 
 @include max-width(590px) {
-    .logo {
-        display: block;
-        margin: 0 auto;
+  .logo {
+    display: block;
+    margin: 0 auto;
 
-        & img {
-            width: 75px;
-            height: 20px;
-        }
+    & img {
+      width: 75px;
+      height: 20px;
     }
-    .site-header__inner {
-        align-items: flex-end;
-    }
-    
-    .site-header__menu {
-        display: block;
-    }
+  }
 
-    .nav, .site-header__link {
-        display: none;
-    }
+  .site-header__inner {
+    align-items: flex-end;
+  }
+
+  .menu-label {
+    display: block;
+  }
+
+  #menu:checked ~ .menu-label {
+    display: none;
+  }
+
+  .nav,
+  .site-header__link {
+    display: none;
+  }
 }
-

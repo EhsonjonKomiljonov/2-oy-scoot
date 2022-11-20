@@ -369,6 +369,7 @@ body {
   flex-direction: column;
   height: 100%;
   margin: 0;
+  padding-top: 64px;
 }
 
 main {
@@ -431,7 +432,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   padding: 22px 0;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .site-header__inner {
@@ -459,11 +466,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 700;
   font-size: 15px;
   line-height: 25px;
-  color: #939CAA;
+  color: #939caa;
   transition: all 0.3s ease;
 }
 .nav__link:hover {
-  color: #FCB72B;
+  color: #fcb72b;
 }
 
 .site-header__btn {
@@ -483,20 +490,77 @@ body::-webkit-scrollbar-thumb {
   font-size: 15px;
   line-height: 25px;
   text-align: center;
-  background-color: #FCB72B;
+  background-color: #fcb72b;
   color: #ffffff;
   transition: all 0.3s ease;
   border: 3px solid transparent;
 }
 .site-header__link:hover {
-  border: 3px solid #FCB72B;
+  border: 3px solid #fcb72b;
   background-color: #ffffff;
-  color: #FCB72B;
+  color: #fcb72b;
 }
 
-.site-header__menu {
+.menu-label {
   display: none;
   background-color: transparent;
+}
+
+#menu:checked body {
+  overflow: hidden;
+}
+
+.menu {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  max-width: 256px;
+  width: 100%;
+  background-color: #333a44;
+  height: 100vh;
+  padding: 32px 64px;
+  transition: 0.5s;
+  transform: translateX(-110%);
+}
+
+#menu:checked ~ .menu {
+  transform: translateX(0);
+  z-index: 9;
+}
+
+#menu:checked ~ #bgm {
+  position: fixed;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  z-index: 5;
+}
+
+.menu-exit {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+#menu:checked ~ .menu-exit {
+  display: block;
+}
+
+.menu__links__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__links {
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #e5ecf4;
 }
 
 @media only screen and (max-width: 768px) {
@@ -520,10 +584,14 @@ body::-webkit-scrollbar-thumb {
   .site-header__inner {
     align-items: flex-end;
   }
-  .site-header__menu {
+  .menu-label {
     display: block;
   }
-  .nav, .site-header__link {
+  #menu:checked ~ .menu-label {
+    display: none;
+  }
+  .nav,
+.site-header__link {
     display: none;
   }
 }
