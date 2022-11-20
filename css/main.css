@@ -1824,9 +1824,15 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
   }
   .map__item {
-    padding: 22px;
     max-width: 300px;
     width: 100%;
+  }
+  .map__item + .map__item {
+    margin-top: 16px;
+  }
+  .map__links {
+    display: block;
+    padding: 22px;
     font-size: 24px;
     line-height: 28px;
     background: rgba(252, 183, 43, 0.1490196078);
@@ -1834,9 +1840,6 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: -1.07143px;
     color: #495567;
     text-align: center;
-  }
-  .map__item + .map__item {
-    margin-top: 16px;
   }
 }
 .mess__inner {

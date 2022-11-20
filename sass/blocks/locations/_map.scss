@@ -39,9 +39,17 @@
     }
 
     .map__item {
-        padding: 22px;
         max-width: 300px;
         width: 100%;
+    }
+
+    .map__item + .map__item {
+        margin-top: 16px;
+    }
+
+    .map__links{
+        display: block;
+        padding: 22px;
         font-size: 24px;
         line-height: 28px;
         background: #fcb72b26;
@@ -49,9 +57,5 @@
         letter-spacing: -1.07143px;
         color: #495567;
         text-align: center;
-    }
-
-    .map__item + .map__item {
-        margin-top: 16px;
     }
 }
