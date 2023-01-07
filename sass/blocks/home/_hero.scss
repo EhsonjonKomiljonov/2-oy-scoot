@@ -1,6 +1,6 @@
 .hero {
     padding: 153px 0;
-    background-image: url('../../../images/hero-bgi.png');
+    background-image: url('../images/hero-bgi.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -54,7 +54,7 @@
 
 @include max-width(768px) {
     .hero {
-        background-image: url('../../../images/hero-tablet-bgi.png');
+        background-image: url('../images/hero-tablet-bgi.png');
         background-position: center;
         padding: 137px 0 217px;
     }
@@ -78,7 +78,7 @@
 @include max-width(576px) {
     .hero {
         padding: 115px 0 180px;
-        background-image: url('../../../images/hero-mobile-bgi.png');
+        background-image: url('../images/hero-mobile-bgi.png');
         background-size: fill;
     }
 

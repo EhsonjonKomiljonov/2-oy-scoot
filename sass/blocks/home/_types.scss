@@ -11,12 +11,12 @@
     padding: 70px 0;
     margin-bottom: 180px;
     display: flex;
-    background-image: url('../../../images/riding-bg.png');
+    background-image: url('../images/riding-bg.png');
     background-repeat: no-repeat;
     background-position: calc(50% + 500px) calc(50% + 3px);
 
     &:nth-child(2) {
-        background-image: url('../../../images/city-bg.png');
+        background-image: url('../images/city-bg.png');
         background-position: calc(50% - 600px) calc(50% + 3px);
 
         & .types__content {
@@ -25,7 +25,7 @@
     }
 
     &:last-child {
-        background-image: url('../../../images/paymet-bg.png');
+        background-image: url('../images/paymet-bg.png');
         background-position: calc(50% + 550px) calc(50% + 3px);
     }
 }
@@ -134,14 +134,14 @@
         line-height: 25px;
     }
     .types__item:first-child {
-        background-image: url('../../../images/riding-mobile-bg.png');
+        background-image: url('../images/riding-mobile-bg.png');
         margin-bottom: 0px;
         padding-top: 340px;
         background-position: calc(50% + 10px) calc(50% - 150px);
     }
 
     .types__item:nth-child(2) {
-        background-image: url('../../../images/city-mobile-bg.png');
+        background-image: url('../images/city-mobile-bg.png');
         margin-bottom: 0;
         padding-top: 350px;
         background-position: calc(50% - 15px) calc(50% - 150px);
@@ -151,7 +151,7 @@
         margin-bottom: 5px;
         padding-top: 350px;
         padding-bottom: 10px;
-        background-image: url('../../../images/paymet-mobile-bg.png');
+        background-image: url('../images/paymet-mobile-bg.png');
         background-position: calc(50% + 20px) calc(50% - 150px);
     }
 }

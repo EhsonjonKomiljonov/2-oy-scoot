@@ -53,16 +53,16 @@
     width: 96px;
     height: 96px;
     top: -130px;
-    background-image: url('../../../images/service-1.png');
+    background-image: url('../images/service-1.png');
     content: '';
 }
 
 .service__item:nth-child(2)::before {
-    background-image: url('../../../images/service-2.png');
+    background-image: url('../images/service-2.png');
 }
 
 .service__item:nth-child(3)::before {
-    background-image: url('../../../images/service-3.png');
+    background-image: url('../images/service-3.png');
 }
 
 
